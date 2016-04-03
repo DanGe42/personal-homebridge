@@ -1,0 +1,19 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "<%= bridge.username %>",
+        "port": 51826,
+        "pin": "<%= bridge.pin %>"
+    },
+    "description": "",
+    "accessories": [],
+    "platforms": [
+        {
+            "platform": "PhilipsHue",
+            "name": "Lights",
+            "ip_address": "<%= platforms.hue.ip_address %>",
+            "username": "<%= platforms.hue.username %>",
+            "excludephilips": false
+        }
+    ]
+}

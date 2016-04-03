@@ -1,0 +1,17 @@
+{
+  "name": "personal-homebridge",
+  "version": "0.0.1",
+  "description": "Personal Homebridge setup, with some helper scripts to keep secrets out",
+  "scripts": {
+    "config:generate": "./generate_config.js",
+    "start": "homebridge -U ./_homebridge",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Ge",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "homebridge": "^0.3.2",
+    "homebridge-philipshue": "0.0.2"
+  }
+}
